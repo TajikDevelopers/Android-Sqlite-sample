@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutVertical"
+            style="@style/topSpace"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/leftSpace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select contact:" />
+
+            <Spinner
+                android:id="@+id/spinnerContacts"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+            </Spinner>
+
+            <LinearLayout
+                android:id="@+id/layoutButtons"
+                style="@style/topSpace"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnDelete"
+                    android:text="Delete"
+                    android:layout_centerInParent="true"
+                    />
+                <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnClose"
+                    android:text="Close"
+                    style="@style/leftSpace"
+                    android:layout_centerInParent="true"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
